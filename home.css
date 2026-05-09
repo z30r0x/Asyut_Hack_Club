@@ -1,0 +1,159 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 2rem;
+    background: #333;
+    color: #fff;
+    margin-top: auto;
+}
+
+img {
+    width: 10em;
+    height: 5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: #fff;
+    background: url("images/home.jpg") center/cover no-repeat; /* your image here */
+    min-height: 60vh; /* makes it taller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* covers entire hero section */
+    background: rgba(0, 0, 0, 0.4); /* dark transparent shadow */
+    z-index: 0;
+}
+
+/* Make text appear above the overlay */
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 8rem 7rem;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 280px;
+    color: #fff;
+}
+
+.info-image {
+    flex: 2; /* image gets more space */
+    min-width: 310px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-image img {
+    width: 100%;   /* fills its container */
+    max-width: 670px; /* prevents it from becoming too huge */
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    display: flex;
+    justify-content: space-between; /* space between left and right */
+    align-items: center;
+     padding: 2rem 3rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+.footer-left p {
+    margin: 0;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-right a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-right img {
+    width: 24px;   /* fixed width */
+    height: 24px;  /* fixed height */
+    object-fit: contain; /* keeps proportions inside the box */
+    transition: opacity 0.3s;
+}
+
+.footer-right img:hover {
+    opacity: 0.7;
+}

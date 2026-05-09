@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #7f7575; /* Grey background */
+}
+
+.about {
+    padding: 8rem;
+    margin: 8rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.first {
+    margin-right: 20rem;
+}
+
+.second {
+    margin-left: 20rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 2rem;
+    background: #333;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #555;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 2rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    aspect-ratio: 1 / 1; /* keeps square shape */
+    overflow: hidden;
+    border-radius: 0.625rem;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem;
+}
+
+.overlay p {
+    margin-bottom: 0.9375rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.social-links img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* puts text left & icons right */
+    align-items: center;
+    padding: 2rem 3rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right {
+    display: flex; /* ensures icons sit side by side */
+    gap: 0.625rem; /* space between icons */
+}
+
+.footer-right img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: opacity 0.3s;
+}
+
+.footer-right img:hover {
+    opacity: 0.7;
+}
