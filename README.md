@@ -6,8 +6,8 @@ A simple two-page static website for **Asyut Hack Club** — a local chapter of 
 
 ## Preview
   <tr>
-    <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/main/blob/photos/Screenshot 2026-05-20 145021.png" width="400" height="300" style="margin: 30px;"></td>
-    <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/blob/main/photos/about_us.png" width="400" height="300" style="margin: 30px;"></td>
+    <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/blob/main/photos/home.png" width="600" height="400" style="margin: 30px;"></td>
+    <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/blob/main/photos/about_us.png" width="600" height="400" style="margin: 30px;"></td>
   </tr>
 
 ## Pages
