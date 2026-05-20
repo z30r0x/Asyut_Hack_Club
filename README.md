@@ -7,7 +7,7 @@ A simple two-page static website for **Asyut Hack Club** — a local chapter of 
 ## Preview
 
 ### Home Page
-![Home Page](Screenshot_2026-05-20_145021.png)
+![Home Page](photos/Screenshot 2026-05-20 145021.png)
 
 ### About Us Page
 ![About Us Page](Screenshot_2026-05-20_145042.png)
