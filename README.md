@@ -5,16 +5,10 @@ A simple two-page static website for **Asyut Hack Club** — a local chapter of 
 ---
 
 ## Preview
-<table>
-  <tr>
-    <th>Home Page</th>
-    <th>About Us Page</th>
-  </tr>
   <tr>
     <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/main/blob/photos/Screenshot 2026-05-20 145021.png" width="200" style="margin: 30px;"></td>
     <td><img src="https://github.com/z30r0x/Asyut_Hack_Club/main/blob/photos/Screenshot 2026-05-20 145042.png" width="200" style="margin: 30px;"></td>
   </tr>
-</table>
 
 ## Pages
 
